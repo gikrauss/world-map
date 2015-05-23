@@ -20,6 +20,10 @@ The simplest way to generate a single PNG file is to use one of the many Chrome 
 
 ## Example ##
 
-Scale down from 16565x9152px to 858x474px
+Scale down from 16565x9152px to 858x474px:
 
 ![world map](https://raw.github.com/gikrauss/world-map/master/examples/world-map.png)
+
+Detailed section at 100%:
+
+![world map detail](https://raw.github.com/gikrauss/world-map/master/examples/world-map-detail.png)
