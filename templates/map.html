@@ -1,0 +1,35 @@
+<html>
+  <head>
+  	<style type="text/css">
+  		img {
+  			float: left;
+        margin-left: -3px;
+        margin-top: -32px;
+  		}
+
+      img.col1 {
+        margin-left: 0px;
+      }
+
+      div.row1 img {
+        margin-top: 0px;
+      }
+
+      div {
+        clear: left;
+      }
+  	</style>
+  </head>
+
+  <body style="width:16565px;margin:0;">
+
+    {% for latitude in latitudes %}
+      <div class="row{{loop.index}}">
+        {% for longitude in longitudes %}
+          <img class="col{{loop.index}}" src="https://maps.googleapis.com/maps/api/staticmap?center={{latitude}},{{longitude}}&zoom={{zoom}}&size=640x640&maptype=terrain&format=png&key={{config['API_KEY']}}"
+            alt="lat: {{latitude}} long: {{longitude}}"/>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </body>
+</html>
