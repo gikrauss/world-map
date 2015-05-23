@@ -17,3 +17,9 @@ It's possible to run the application without an API key but the number of reques
 ## Download PNG ##
 
 The simplest way to generate a single PNG file is to use one of the many Chrome extensions that capture an entire web page. I've used https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?utm_source=chrome-ntp-icon successfully
+
+## Example ##
+
+Scale down from 16565x9152px to 858x474px
+
+![world map](https://raw.github.com/gikrauss/world-map/master/examples/world-map.png)
