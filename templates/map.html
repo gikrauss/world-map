@@ -26,7 +26,7 @@
     {% for latitude in latitudes %}
       <div class="row{{loop.index}}">
         {% for longitude in longitudes %}
-          <img class="col{{loop.index}}" src="https://maps.googleapis.com/maps/api/staticmap?center={{latitude}},{{longitude}}&zoom={{zoom}}&size=640x640&maptype=terrain&format=png&key={{config['API_KEY']}}"
+          <img class="col{{loop.index}}" src="https://maps.googleapis.com/maps/api/staticmap?center={{latitude}},{{longitude}}&zoom={{zoom}}&size=640x640&maptype=terrain&format=png{% if config['API_KEY'] %}&key={{config['API_KEY']}}{% endif %}"
             alt="lat: {{latitude}} long: {{longitude}}"/>
         {% endfor %}
       </div>

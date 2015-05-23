@@ -1,6 +1,8 @@
+import os
 from flask import Flask, render_template
+
 app = Flask(__name__)
-app.config.from_envvar('SETTINGS')
+app.config['API_KEY'] = os.environ.get('API_KEY', False)
 
 @app.route('/')
 def map():
